@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background-color: aliceblue;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.music-container {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 20px 0 rgb(198, 220, 240);
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    width: 500px;
+}
+
+.img-container{
+    position: relative;
+    width: 100%;
+}
+
+.img-container img {
+   width: inherit;
+   border-radius: 15px 15px 0 0;
+}
+
+#artist {
+    font-size: 1.5rem;
+}
+#title{
+    color: rgb(95, 95, 95);
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    z-index: 1;
+}
+
+.action-btn {
+    background-color: white;
+    border: none;
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+
+.action-btn-big {
+    font-size: 1.5rem;
+}
+
+.music-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-container {
+    cursor: pointer;
+    width: 100%;
+    height: 4px;
+    border-radius: 5px;
+    
+    background-color: lightgray;
+}
+
+.progress {
+    background-color: gray;
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
+}
+
+.searchBar {
+    display: flex;
+    
+    justify-content: center;
+    margin: 1rem;
+}
+
+.input {
+    border-color: lightgray;
+    border-radius: 10px;
+    font-size: 1rem;
+    width: 60%;
+}
+.search-btn {
+    background-color: white;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}

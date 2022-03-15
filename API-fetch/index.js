@@ -4,6 +4,8 @@
 // }).then((data) =>{
 //     console.log(data);
 // });
+
+
 const todoListElem = document.querySelector('#todos');
 const inputElem = document.querySelector('#todo-text');
 const addTodoButton = document.querySelector('#add-todo');

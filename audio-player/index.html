@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0900390d4e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Music player</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Music player</h1>
+        <i class="fa-solid fa-backward-step"></i>
+        <section class="music-container">
+            <section class="img-container">
+                <img id="albumCover" src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="music-cover" id="cover">
+            </section>
+            <section class="music-info">
+                <h3 id="artist">Artist</h3>
+                <h3 id="title">Title</h3>
+                <section class="progress-container">
+                    <section class="progress"></section>
+                    <p id="progress-time"></p>
+                </section>
+                <audio id="player">
+                   
+                </audio>
+            </section>
+            <section class="navigation">
+                <button id="backward" class="action-btn">
+                    <i class="fas fa-backward"></i>
+                </button>
+                <button id="play" class="action-btn action-btn-big">
+                    <i id="playIcon" class="fas fa-play"></i>
+                </button>
+               
+                </button>
+                <button id="forward" class="action-btn">
+                    <i class="fas fa-forward"></i>
+                </button>
+            </section>
+            <section class="searchBar">
+            <input type="text" id="titleSearch" class="input" placeholder="Search">
+            <button class="search-btn" id="search">Search</button>
+        </section>
+        </section>
+        
+    </div>
+    <script src="js/index.js" type="module"></script>
+</body>
+</html>

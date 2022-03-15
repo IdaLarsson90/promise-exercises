@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Lewis Carroll Word Puzzle</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Lewis Carroll Word Puzzle</h1>
+        <section id="startForm">
+            <p>Choose your puzzle</p>
+            <button id="fourButton">Raise FOUR to FIVE</button>
+            <button id="eyeButton">cover EYE with LID</button>
+            <button id="tigerButton">Crown TIGER with ROSES</button>
+            <button id="wheatButton">Make WHEAT into BREAD</button>
+        </section>
+        <section id="inGame">
+            <p>Enter the new word.</p>
+            <input type="text" id="newWord" placeholder="New word">
+            <!-- <input type="text" id="input" minlength="1" maxlength="1"> -->
+            <button id="addButton">Add</button>
+            <p id="info"></p>
+            <h2 id="infoWin"></h2>
+            <section id="listSection"></section>  
+            <ul id="wordList"></ul>
+        </section>
+    </div>
+    <script src="js/index.js" type="module"></script>
+</body>
+</html>
